@@ -1,0 +1,86 @@
+● micasa-arch
+    State: running
+     Jobs: 0 queued
+   Failed: 0 units
+    Since: Thu 2021-08-12 13:58:48 CST; 8h ago
+   CGroup: /
+           ├─user.slice
+           │ └─user-1000.slice
+           │   ├─user@1000.service
+           │   │ ├─session.slice
+           │   │ │ └─pulseaudio.service
+           │   │ │   ├─813 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+           │   │ │   └─833 /usr/lib/pulse/gsettings-helper
+           │   │ ├─app.slice
+           │   │ │ ├─dconf.service
+           │   │ │ │ └─2973 /usr/lib/dconf-service
+           │   │ │ ├─gvfs-daemon.service
+           │   │ │ │ ├─  682 /usr/lib/gvfsd
+           │   │ │ │ ├─  687 /usr/lib/gvfsd-fuse /run/user/1000/gvfs -f
+           │   │ │ │ ├─ 2956 /usr/lib/gvfsd-trash --spawner :1.14 /org/gtk/gvfs/exec_spaw/0
+           │   │ │ │ ├─13131 /usr/lib/gvfsd-network --spawner :1.14 /org/gtk/gvfs/exec_spaw/1
+           │   │ │ │ └─13139 /usr/lib/gvfsd-dnssd --spawner :1.14 /org/gtk/gvfs/exec_spaw/2
+           │   │ │ ├─gvfs-udisks2-volume-monitor.service
+           │   │ │ │ └─2941 /usr/lib/gvfs-udisks2-volume-monitor
+           │   │ │ ├─at-spi-dbus-bus.service
+           │   │ │ │ ├─694 /usr/lib/at-spi-bus-launcher
+           │   │ │ │ ├─700 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --prin>
+           │   │ │ │ └─708 /usr/lib/at-spi2-registryd --use-gnome-session
+           │   │ │ ├─gvfs-metadata.service
+           │   │ │ │ └─2968 /usr/lib/gvfsd-metadata
+           │   │ │ └─dbus.service
+           │   │ │   ├─577 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --sys>
+           │   │ │   └─672 /usr/lib/kdeconnectd
+           │   │ └─init.scope
+           │   │   ├─509 /usr/lib/systemd/systemd --user
+           │   │   └─510 (sd-pam)
+           │   └─session-1.scope
+           │     ├─  471 login -- micasa
+           │     ├─  516 /bin/sh /usr/bin/startx
+           │     ├─  534 xinit /home/micasa/.xinitrc -- /etc/X11/xinit/xserverrc :0 vt1 -keeptty -auth /tmp/serverauth.eXENG>
+           │     ├─  535 /usr/lib/Xorg -nolisten tcp :0 vt1 -keeptty -auth /tmp/serverauth.eXENGyAWYG
+           │     ├─  574 bspwm
+           │     ├─  617 kdeconnect-indicator
+           │     ├─  620 picom --config /home/micasa/.config/autostart/picom.conf
+           │     ├─  623 /bin/sh /home/micasa/.config/bspwm/bspwmrc 0
+           │     ├─  626 blueberry-tray
+           │     ├─  636 fcitx5
+           │     ├─  638 sxhkd
+           │     ├─  639 polybar -q main -c /home/micasa/.config/polybar/shapes/config.ini
+           │     ├─  706 /usr/bin/python3 /usr/lib/blueberry/safechild /usr/sbin/rfkill event
+           │     ├─  714 /usr/sbin/rfkill event
+           │     ├─ 6918 python3 WudaoServer.py
+           │     ├─17087 alacritty
+           │     ├─17093 /bin/zsh
+           │     ├─17112 systemctl status
+           │     └─17113 less
+           ├─init.scope
+           │ └─1 /sbin/init
+           └─system.slice
+             ├─systemd-udevd.service
+             │ └─256 /usr/lib/systemd/systemd-udevd
+             ├─polkit.service
+             │ └─817 /usr/lib/polkit-1/polkitd --no-debug
+             ├─rtkit-daemon.service
+             │ └─814 /usr/lib/rtkit-daemon
+             ├─iwd.service
+             │ └─6113 /usr/lib/iwd/iwd
+             ├─bluetooth.service
+             │ └─441 /usr/lib/bluetooth/bluetoothd
+             ├─systemd-journald.service
+             │ └─241 /usr/lib/systemd/systemd-journald
+             ├─dhcpcd.service
+             │ ├─ 343 dhcpcd: [master] [ip4] [ip6]
+             │ ├─ 344 dhcpcd: [privileged actioneer]
+             │ ├─ 345 dhcpcd: [network proxy]
+             │ ├─ 346 dhcpcd: [control proxy]
+             │ └─8533 dhcpcd: [BPF ARP] wlan0 192.168.1.119
+             ├─upower.service
+             │ └─1614 /usr/lib/upowerd
+             ├─udisks2.service
+             │ └─2944 /usr/lib/udisks2/udisksd
+             ├─dbus.service
+             │ └─339 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+             └─systemd-logind.service
+               └─347 /usr/lib/systemd/systemd-logind
+lines 47-85/85 (END)
